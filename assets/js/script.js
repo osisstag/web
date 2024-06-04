@@ -131,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   setupAutoRefresh("iframe1", "countdown1");
   setupAutoRefresh("iframe2", "countdown2");
+  setupAutoRefresh("iframe3", "countdown3");
 });
 
 // VISI MISI
