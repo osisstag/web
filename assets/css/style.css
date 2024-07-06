@@ -1470,6 +1470,11 @@ body {
   margin-top: 40px;
 }
 
+.scrollable-section {
+  max-height: 500px; 
+  overflow-y: auto;
+}
+
 /* PRELOAD ANIMATION */
 
 @keyframes draw_logo {

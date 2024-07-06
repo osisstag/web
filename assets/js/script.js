@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 /**
  * add event on element
  */
@@ -15,8 +13,6 @@ const addEventOnElem = function (elem, type, callback) {
     elem.addEventListener(type, callback);
   }
 }
-
-
 
 /**
  * navbar toggle
@@ -40,8 +36,6 @@ const closeNavbar = function () {
 }
 
 addEventOnElem(navLinks, "click", closeNavbar);
-
-
 
 /**
  * header active when scroll down to 100px
@@ -149,13 +143,21 @@ document.addEventListener("DOMContentLoaded", function() {
     },
   ];
   let currentIndex = 1;
+  let lastClickTime = 0;
+  const cooldown = 1000;
 
   const h1Element = textContainer.querySelector("h1.text-content");
   const pElement = document.getElementById("text-paragraph");
 
   textContainer.addEventListener("click", function(event) {
     const target = event.target;
+    const now = new Date().getTime();
     if (target === h1Element || target === pElement) {
+      if (now - lastClickTime < cooldown) {
+        return; 
+      }
+      lastClickTime = now;
+
       h1Element.classList.add("fade-out");
       pElement.classList.add("fade-out");
 
@@ -168,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         h1Element.classList.remove("fade-out");
         pElement.classList.remove("fade-out");
-      }, 500); 
+      }, 500);
     }
   });
 });
