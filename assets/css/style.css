@@ -1075,6 +1075,10 @@ body {
   .container { max-width: 720px; }
 
   .btn { padding: 15px 30px; }
+  
+  .sign-in {
+    display: none;
+  }
 
   :is(.course, .blog) .grid-list { grid-template-columns: 1fr 1fr; }
 
