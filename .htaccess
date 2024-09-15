@@ -1,3 +1,12 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^osisstag\.online$ [NC]
+RewriteRule ^ - [L]
+
+RewriteCond %{HTTP_HOST} !^osisstag\.online$ [NC]
+RewriteCond %{HTTP_HOST} ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$
+RewriteRule ^ - [F]
+
 <IfModule mod_rewrite.c>
     RewriteEngine on
     RewriteCond %{REQUEST_FILENAME} !-d
