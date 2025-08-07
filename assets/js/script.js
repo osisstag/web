@@ -134,12 +134,12 @@ document.addEventListener("DOMContentLoaded", function() {
   const textContainer = document.getElementById("text-container");
   const texts = [
     {
-      heading: "MISI OSIS SMAK SANTA AGNES 2023/2024",
-      paragraph: "1. Mengadakan kegiatan yang mengembangkan bakat dan potensi siswa sehingga siswa/i SMA Katolik Santa Agnes Surabaya semakin berkualitas. \n2. Membuat program kerja yang menggandeng pihak luar dan meliput segala kegiatan sehingga SMA Katolik Santa Agnes Surabaya semakin dikenal. \n3. Membuka saran, kritik, evaluasi, dan ide - ide mengenai program kerja yang dilaksanakan oleh OSIS. \n4. Mempererat rasa persaudaraan antar pengurus OSIS dan juga antar siswa/i SMA Katolik Santa Agnes Surabaya."
+      heading: "MISI OSIS SMAK SANTA AGNES 2024/2025",
+      paragraph: "1. Menampung, mendengarkan, dan menindaklanjuti aspirasi siswa/i agar dapat menjadi media untuk memajukan SMA Katolik Santa Agnes Surabaya. \n2. Membuat dan mengadakan program kerja yang mampu membangun, mengembangkan, dan mengasah bakat serta potensi siswa/i SMA Katolik Santa Agnes Surabaya. \n3. Menyusun program kerja yang melibatkan pihak luar dan meliput semua kegiatan, sehingga SMA Katolik Santa Agnes Surabaya semakin dikenal. \n4. Meningkatkan solidaritas di antara pengurus OSIS dan siswa/i SMA Katolik Santa Agnes Surabaya."
     },
     {
-      heading: "VISI OSIS SMAK SANTA AGNES 2023/2024",
-      paragraph: "MENJADIKAN OSIS SMA KATOLIK SANTA AGNES SURABAYA SEBAGAI WADAH UNTUK MENGEMBANGKAN BAKAT, POTENSI SISWA, MEMPROMOSIKAN SEKOLAH DAN MENYALURKAN ASPIRASI."
+      heading: "VISI OSIS SMAK SANTA AGNES 2024/2025",
+      paragraph: "Menjadikan OSIS SMA Katolik Santa Agnes sebagai organisasi yang dapat memberikan wadah untuk mengembangkan potensi, kreativitas, kerja sama, mengenalkan sekolah, dan mendengarkan aspirasi siswa/i."
     },
   ];
   let currentIndex = 1;
